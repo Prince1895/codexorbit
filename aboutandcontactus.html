@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us and Contact Us-codeXorbit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900">
+    <div class="nav bg-black">
+        <nav class="flex justify-between items-center text-white">
+          <span
+            class="lg:text-4xl lg:m-2 lg:p-2 font-serif font-bold tracking-wider sm:text-xl sm:m-1 sm:p-0"
+            ><a href="index.html">codeXorbit</a></span
+          >
+          <ul
+            class="flex sm:text-sm justify-between lg:text-lg lg:flex sm:hidden text-black sm:text-white"
+          >
+            <li
+              class="cursor-pointer tracking-wide hover:text-gray-300 hover:underline hover:ease-in-out-200ms hover:active:text-blue-300 hover:scale-110 hover:font-semibold lg:mx-4"
+            >
+             <a href="Editor.html">Editor</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+              <a href="project.html">Projects</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+             <a href="Challanges.html">Challenges</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+              <a href="discuss.html">Discuss</a>
+            </li>
+          </ul>
+          <div class="space-x-6 mr-10">
+            <button
+              class="bg-gray-700 lg:px-3 lg:text-lg font-medium lg:py-1 rounded-md hover:bg-white hover:text-black hover:outline-neutral-700 sm:px-1 sm:text-sm sm:py-0.5"
+            >
+              <a href="signup.html">Sign Up</a>
+            </button>
+            <button
+              class="bg-gray-700 lg:px-3 lg:text-lg font-medium lg:py-1 rounded-md hover:bg-white hover:text-black hover:outline-neutral-700 active:text-black active:bg-white active:outline-slate-600 sm:px-1 sm:text-sm sm:py-0.5"
+            >
+              <a href="Login.html"> Log In </a>
+            </button>
+          </div>
+        </nav>
+      </div>
+    <header class="bg-zinc-900 text-white p-6 text-center">
+        <h1 class="text-4xl font-bold">Welcome to CodeXorbit</h1>
+        <p class="mt-2 text-lg">Your destination for all things frontend development</p>
+    </header>
+
+    <section id="about" class=" max-w-4xl mx-auto p-8 my-10 rounded-lg shadow-lg bg-slate-950">
+        <h2 class="text-3xl font-semibold text-white  mb-4">About Us</h2>
+        <p class="text-lg leading-relaxed text-white">
+            We are a passionate group of developers dedicated to creating high-quality web experiences.
+            Our mission is to empower individuals by providing them with the tools and knowledge they need to succeed in the world of frontend development.
+            From beginner-friendly tutorials to advanced coding techniques, we strive to make web development accessible to everyone.
+        </p>
+    </section>
+    <section id="contact" class="bg-slate-950 max-w-4xl mx-auto p-8 my-10 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-semibold text-white mb-4">Contact Us</h2>
+        <p class="text-lg mb-6 text-white">Have any questions or suggestions? We would love to hear from you!</p>
+
+        <form action="#" method="POST" class="space-y-6">
+            <div class="flex flex-col">
+                <label for="name" class="font-semibold text-lg text-white">Name</label>
+                <input type="text" id="name" name="name" class="p-4 border border-gray-300 rounded-lg shadow-sm " placeholder=" Name" required>
+            </div>
+            <div class="flex flex-col">
+                <label for="email" class="font-semibold text-lg text-white">Email</label>
+                <input type="email" id="email" name="email" class="p-4 border border-gray-300 rounded-lg shadow-sm" placeholder="E-mail" required>
+            </div>
+            <div class="flex flex-col">
+                <label for="message" class="font-semibold text-lg text-white">Message</label>
+                <textarea id="message" name="message" rows="4" class="p-4 border border-gray-300 rounded-lg shadow-sm" placeholder="write your message here........." required></textarea>
+            </div>
+            <button type="submit" class="w-full py-3 bg-white text-black font-semibold rounded-lg shadow-md hover:bg-gray-500">Send Message</button>
+        </form>
+    </section>
+    <div id="footer"></div>
+    </div>
+    <div class="bg-black text-white flex justify-between items-center">
+      <div class="ml-24 mt-4 mb-8">
+        <p class="text-lg m-4 font-semibold">codeXorbit</p>
+        <ul class="text-sm m-4">
+            <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+                <a href="index.html"> Home</a>
+               </li>
+               <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+                <a href="aboutandcontactus.html#about"> About</a>
+             </li>
+             <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+                <a href="aboutandcontactus.html#contact">Contact Us</a>
+            </li>
+        </ul>
+        <ul class="text-sm m-4">
+          <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            Github
+          </li>
+          <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            LinkedIn
+          </li>
+          <li class="mb-1 hover:text-blue-700 hover:underline cursor-pointer">
+            Twitter
+          </li>
+          <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            Instagram
+          </li>
+          <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            Facebook
+          </li>
+        </ul>
+      </div>
+      <div class="mt-4 mb-8">
+        <p class="text-lg m-4 font-semibold">Languages</p>
+        <ul class="text-sm m-4">
+          <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>
+          </li>
+          <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+          </li>
+          <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              >JavaScript</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mt-4 mb-8 mr-48">
+        <p class="text-lg m-4 font-semibold">More</p>
+        <ul class="text-sm m-4">
+            <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+              <a href="htmlcheatsheet.html">HTML Cheatsheet</a>
+            </li>
+            <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+                <a href="csscheatsheet.html">CSS Cheatsheet</a>
+            </li>
+            <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+                <a href="jscheatsheet.html">JavaScript Cheatsheet</a>
+            </li>
+            <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+                <a href="roadmap.html">Roadmap</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <p class="bg-black text-white text-center text-base">
+      CodeXOrbit &copy; 2025
+    </p>
+
+</body>
+</html>

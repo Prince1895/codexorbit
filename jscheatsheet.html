@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Cheatsheet-codexorbit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <div class="nav bg-black">
+        <nav class="flex justify-between items-center text-white">
+          <span
+            class="lg:text-4xl lg:m-2 lg:p-2 font-serif font-bold tracking-wider sm:text-xl sm:m-1 sm:p-0"
+            ><a href="index.html">codeXorbit</a></span
+          >
+          <ul
+            class="flex sm:text-sm justify-between lg:text-lg lg:flex sm:hidden text-black sm:text-white"
+          >
+            <li
+              class="cursor-pointer tracking-wide hover:text-gray-300 hover:underline hover:ease-in-out-200ms hover:active:text-blue-300 hover:scale-110 hover:font-semibold lg:mx-4"
+            >
+             <a href="Editor.html">Editor</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+              <a href="project.html">Projects</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+             <a href="Challanges.html">Challenges</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+              <a href="discuss.html">Discuss</a>
+            </li>
+          </ul>
+          <div class="space-x-6 mr-10">
+            <button
+              class="bg-gray-700 lg:px-3 lg:text-lg font-medium lg:py-1 rounded-md hover:bg-white hover:text-black hover:outline-neutral-700 sm:px-1 sm:text-sm sm:py-0.5"
+            >
+              <a href="signup.html">Sign Up</a>
+            </button>
+            <button
+              class="bg-gray-700 lg:px-3 lg:text-lg font-medium lg:py-1 rounded-md hover:bg-white hover:text-black hover:outline-neutral-700 active:text-black active:bg-white active:outline-slate-600 sm:px-1 sm:text-sm sm:py-0.5"
+            >
+              <a href="Login.html"> Log In </a>
+            </button>
+          </div>
+        </nav>
+      </div>
+    <header class="bg-zinc-900 text-white py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-bold">JavaScript Cheatsheet</h1>
+            <p class="text-sm text-blue-200">Quick reference for common JavaScript concepts</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Variables</h2>
+            <div class="bg-white shadow rounded p-4 mb-4">
+                <h3 class="text-lg font-bold text-gray-700">Variable Declaration</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;!-- Declare variables --&gt;
+let x = 10; // Block-scoped variable
+const y = 20; // Constant variable
+var z = 30; // Function-scoped variable
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Functions</h2>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Function Syntax</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;!-- Function declaration --&gt;
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+&lt;!-- Arrow function --&gt;
+const add = (a, b) =&gt; a + b;
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">DOM Manipulation</h2>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Basic DOM Methods</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;!-- Selecting elements --&gt;
+const element = document.querySelector('.class-name');
+
+&lt;!-- Changing content --&gt;
+element.textContent = 'New content';
+
+&lt;!-- Adding event listener --&gt;
+element.addEventListener('click', () =&gt; {
+    console.log('Element clicked!');
+});
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Loops</h2>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Common Loops</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;!-- For loop --&gt;
+for (let i = 0; i &lt; 5; i++) {
+    console.log(i);
+}
+
+&lt;!-- While loop --&gt;
+let count = 0;
+while (count &lt; 5) {
+    console.log(count);
+    count++;
+}
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Events</h2>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Event Handling</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;!-- Adding an event listener --&gt;
+document.querySelector('button').addEventListener('click', function() {
+    alert('Button clicked!');
+});
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Promises</h2>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Promise Example</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;!-- Creating a Promise --&gt;
+const fetchData = new Promise((resolve, reject) =&gt; {
+    const success = true;
+    if (success) {
+        resolve('Data fetched successfully!');
+    } else {
+        reject('Error fetching data.');
+    }
+});
+
+&lt;!-- Using the Promise --&gt;
+fetchData
+    .then(response =&gt; console.log(response))
+    .catch(error =&gt; console.error(error));
+                </pre>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+</div>
+<div class="bg-black text-white flex justify-between items-center">
+  <div class="ml-24 mt-4 mb-8">
+    <p class="text-lg m-4 font-semibold">codeXorbit</p>
+    <ul class="text-sm m-4">
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="index.html"> Home</a>
+           </li>
+           <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="aboutandcontactus.html#about"> About</a>
+         </li>
+         <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="aboutandcontactus.html#contact">Contact Us</a>
+        </li>
+    </ul>
+    <ul class="text-sm m-4">
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        Github
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        LinkedIn
+      </li>
+      <li class="mb-1 hover:text-blue-700 hover:underline cursor-pointer">
+        Twitter
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        Instagram
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        Facebook
+      </li>
+    </ul>
+  </div>
+  <div class="mt-4 mb-8">
+    <p class="text-lg m-4 font-semibold">Languages</p>
+    <ul class="text-sm m-4">
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          >JavaScript</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="mt-4 mb-8 mr-48">
+    <p class="text-lg m-4 font-semibold">More</p>
+    <ul class="text-sm m-4">
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+          <a href="htmlcheatsheet.html">HTML Cheatsheet</a>
+        </li>
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="csscheatsheet.html">CSS Cheatsheet</a>
+        </li>
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="jscheatsheet.html">JavaScript Cheatsheet</a>
+        </li>
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="roadmap.html">Roadmap</a>
+        </li>
+    </ul>
+  </div>
+</div>
+<p class="bg-black text-white text-center text-base">
+  CodeXOrbit &copy; 2025
+</p>
+</body>
+</html>

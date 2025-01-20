@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheatsheet-codeXorbit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <div class="nav bg-black">
+        <nav class="flex justify-between items-center text-white">
+          <span
+            class="lg:text-4xl lg:m-2 lg:p-2 font-serif font-bold tracking-wider sm:text-xl sm:m-1 sm:p-0"
+            ><a href="index.html">codeXorbit</a></span
+          >
+          <ul
+            class="flex sm:text-sm justify-between lg:text-lg lg:flex sm:hidden text-black sm:text-white"
+          >
+            <li
+              class="cursor-pointer tracking-wide hover:text-gray-300 hover:underline hover:ease-in-out-200ms hover:active:text-blue-300 hover:scale-110 hover:font-semibold lg:mx-4"
+            >
+             <a href="Editor.html">Editor</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+              <a href="project.html">Projects</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+             <a href="Challanges.html">Challenges</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+              <a href="discuss.html">Discuss</a>
+            </li>
+          </ul>
+          <div class="space-x-6 mr-10">
+            <button
+              class="bg-gray-700 lg:px-3 lg:text-lg font-medium lg:py-1 rounded-md hover:bg-white hover:text-black hover:outline-neutral-700 sm:px-1 sm:text-sm sm:py-0.5"
+            >
+              <a href="signup.html">Sign Up</a>
+            </button>
+            <button
+              class="bg-gray-700 lg:px-3 lg:text-lg font-medium lg:py-1 rounded-md hover:bg-white hover:text-black hover:outline-neutral-700 active:text-black active:bg-white active:outline-slate-600 sm:px-1 sm:text-sm sm:py-0.5"
+            >
+              <a href="Login.html"> Log In </a>
+            </button>
+          </div>
+        </nav>
+      </div>
+    <header class="bg-zinc-900 text-white py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-bold">CSS Cheatsheet</h1>
+            <p class="text-sm text-purple-200">Quick reference for common CSS properties</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Selectors</h2>
+            <div class="bg-white shadow rounded p-4 mb-4">
+                <h3 class="text-lg font-bold text-gray-700">Basic Selectors</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Element Selector */
+p {
+  color: blue;
+}
+
+/* Class Selector */
+.className {
+  font-size: 16px;
+}
+
+/* ID Selector */
+#uniqueID {
+  text-align: center;
+}
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Box Model</h2>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Box Model Properties</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+/* Margin */
+div {
+  margin: 10px;
+}
+
+/* Padding */
+div {
+  padding: 10px;
+}
+
+/* Border */
+div {
+  border: 1px solid black;
+}
+
+/* Width and Height */
+div {
+  width: 100px;
+  height: 100px;
+}
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Text and Font</h2>
+            <div class="bg-white shadow rounded p-4 mb-4">
+                <h3 class="text-lg font-bold text-gray-700">Text Properties</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+/* Text Color */
+p {
+  color: red;
+}
+
+/* Text Alignment */
+h1 {
+  text-align: center;
+}
+
+/* Text Decoration */
+a {
+  text-decoration: none;
+}
+                </pre>
+            </div>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Font Properties</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+/* Font Size */
+p {
+  font-size: 16px;
+}
+
+/* Font Family */
+h1 {
+  font-family: Arial, sans-serif;
+}
+
+/* Font Weight */
+h2 {
+  font-weight: bold;
+}
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Positioning</h2>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Position Properties</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+/* Static Positioning */
+div {
+  position: static;
+}
+
+/* Relative Positioning */
+div {
+  position: relative;
+  top: 10px;
+}
+
+/* Absolute Positioning */
+div {
+  position: absolute;
+  right: 10px;
+}
+
+/* Fixed Positioning */
+div {
+  position: fixed;
+  bottom: 0;
+}
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Flexbox</h2>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Common Flexbox Properties</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+/* Flex Container */
+div {
+  display: flex;
+  justify-content: center; /* Align items horizontally */
+  align-items: center; /* Align items vertically */
+}
+
+/* Flex Item */
+div {
+  flex: 1; /* Grow to fill available space */
+}
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Grid</h2>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Common Grid Properties</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+/* Grid Container */
+div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 10px; /* Spacing between grid items */
+}
+
+/* Grid Item */
+div {
+  grid-column: span 2; /* Span 2 columns */
+}
+                </pre>
+            </div>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Animation</h2>
+            <div class="bg-white shadow rounded p-4 mb-4">
+                <h3 class="text-lg font-bold text-gray-700">Animation</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+/* Define a keyframe animation */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* Apply the animation */
+div {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+                </pre>
+            </div>
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Transition</h2>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Transition</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+/* Apply a transition effect */
+button {
+    background-color: blue;
+    color: white;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+/* Change on hover */
+button:hover {
+    background-color: green;
+    transform: scale(1.1);
+}
+                </pre>
+            </div>
+        </section>
+
+    </main>
+    <div id="footer"></div>
+</div>
+<div class="bg-black text-white flex justify-between items-center">
+  <div class="ml-24 mt-4 mb-8">
+    <p class="text-lg m-4 font-semibold">codeXorbit</p>
+    <ul class="text-sm m-4">
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="index.html"> Home</a>
+           </li>
+           <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="aboutandcontactus.html#about"> About</a>
+         </li>
+         <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="aboutandcontactus.html#contact">Contact Us</a>
+        </li>
+    </ul>
+    <ul class="text-sm m-4">
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        Github
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        LinkedIn
+      </li>
+      <li class="mb-1 hover:text-blue-700 hover:underline cursor-pointer">
+        Twitter
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        Instagram
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        Facebook
+      </li>
+    </ul>
+  </div>
+  <div class="mt-4 mb-8">
+    <p class="text-lg m-4 font-semibold">Languages</p>
+    <ul class="text-sm m-4">
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          >JavaScript</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="mt-4 mb-8 mr-48">
+    <p class="text-lg m-4 font-semibold">More</p>
+    <ul class="text-sm m-4">
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+          <a href="htmlcheatsheet.html">HTML Cheatsheet</a>
+        </li>
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="csscheatsheet.html">CSS Cheatsheet</a>
+        </li>
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="jscheatsheet.html">JavaScript Cheatsheet</a>
+        </li>
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="roadmap.html">Roadmap</a>
+        </li>
+    </ul>
+  </div>
+</div>
+<p class="bg-black text-white text-center text-base">
+  CodeXOrbit &copy; 2025
+</p>
+</body>
+</html>

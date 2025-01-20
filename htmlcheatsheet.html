@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheatsheet -codexorbit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <div class="nav bg-black">
+        <nav class="flex justify-between items-center text-white">
+          <span
+            class="lg:text-4xl lg:m-2 lg:p-2 font-serif font-bold tracking-wider sm:text-xl sm:m-1 sm:p-0"
+            ><a href="index.html">codeXorbit</a></span
+          >
+          <ul
+            class="flex sm:text-sm justify-between lg:text-lg lg:flex sm:hidden text-black sm:text-white"
+          >
+            <li
+              class="cursor-pointer tracking-wide hover:text-gray-300 hover:underline hover:ease-in-out-200ms hover:active:text-blue-300 hover:scale-110 hover:font-semibold lg:mx-4"
+            >
+             <a href="Editor.html">Editor</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+              <a href="project.html">Projects</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+             <a href="Challanges.html">Challenges</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+              <a href="discuss.html">Discuss</a>
+            </li>
+          </ul>
+          <div class="space-x-6 mr-10">
+            <button
+              class="bg-gray-700 lg:px-3 lg:text-lg font-medium lg:py-1 rounded-md hover:bg-white hover:text-black hover:outline-neutral-700 sm:px-1 sm:text-sm sm:py-0.5"
+            >
+              <a href="signup.html">Sign Up</a>
+            </button>
+            <button
+              class="bg-gray-700 lg:px-3 lg:text-lg font-medium lg:py-1 rounded-md hover:bg-white hover:text-black hover:outline-neutral-700 active:text-black active:bg-white active:outline-slate-600 sm:px-1 sm:text-sm sm:py-0.5"
+            >
+              <a href="Login.html"> Log In </a>
+            </button>
+          </div>
+        </nav>
+      </div>
+    <header class="bg-zinc-900 text-white py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-bold">HTML Cheatsheet</h1>
+            <p class="text-sm text-blue-200">Quick reference for common HTML elements</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6">
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Basic Structure</h2>
+            <div class="bg-white shadow rounded p-4 mb-4">
+                <h3 class="text-lg font-bold text-gray-700">HTML Skeleton</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Content here --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Text Elements</h2>
+            <div class="bg-white shadow rounded p-4 mb-4">
+                <h3 class="text-lg font-bold text-gray-700">Headings</h3>
+                <p class="text-sm text-gray-600">Use headings for titles or subtitles.</p>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+                </pre>
+            </div>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Paragraphs &amp; Formatting</h3>
+                <p class="text-sm text-gray-600">Use these for body text and inline styles.</p>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;strong&gt;Bold text&lt;/strong&gt;
+&lt;em&gt;Italic text&lt;/em&gt;
+&lt;br&gt;  <!-- Line break -->
+&lt;hr&gt;  <!-- Horizontal rule -->
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Links &amp; Images</h2>
+            <div class="bg-white shadow rounded p-4 mb-4">
+                <h3 class="text-lg font-bold text-gray-700">Links</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
+                </pre>
+            </div>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Images</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;img src="image.jpg" alt="Description of image" width="600" height="400"&gt;
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Lists</h2>
+            <div class="bg-white shadow rounded p-4 mb-4">
+                <h3 class="text-lg font-bold text-gray-700">Ordered List</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;ol&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;
+                </pre>
+            </div>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Unordered List</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;ul&gt;
+  &lt;li&gt;Item one&lt;/li&gt;
+  &lt;li&gt;Item two&lt;/li&gt;
+&lt;/ul&gt;
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Tables</h2>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Simple Table</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Forms</h2>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Form Tag</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;form action="/submit" method="post"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  &lt;br&gt;
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+  &lt;br&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Media</h2>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">Media Tags</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+  Your browser does not support the audio tag.
+&lt;/audio&gt;
+
+&lt;video controls width="600"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">HTML Left Element &lt;left&gt;</h2>
+            <div class="bg-white shadow rounded p-4">
+                <h3 class="text-lg font-bold text-gray-700">HTML Left Tag</h3>
+                <pre class="bg-gray-800 text-white rounded p-4 overflow-auto mt-2 text-sm">
+&lt;left&gt;This is left-aligned text&lt;/left&gt;
+                </pre>
+                <p class="text-sm text-gray-600 mt-2">Note: The <code>&lt;left&gt;</code> tag is not a standard HTML tag and may not work in modern browsers. Use CSS for alignment instead.</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+</div>
+<div class="bg-black text-white flex justify-between items-center">
+  <div class="ml-24 mt-4 mb-8">
+    <p class="text-lg m-4 font-semibold">codeXorbit</p>
+    <ul class="text-sm m-4">
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="index.html"> Home</a>
+           </li>
+           <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="aboutandcontactus.html#about"> About</a>
+         </li>
+         <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="aboutandcontactus.html#contact">Contact Us</a>
+        </li>
+    </ul>
+    <ul class="text-sm m-4">
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        Github
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        LinkedIn
+      </li>
+      <li class="mb-1 hover:text-blue-700 hover:underline cursor-pointer">
+        Twitter
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        Instagram
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        Facebook
+      </li>
+    </ul>
+  </div>
+  <div class="mt-4 mb-8">
+    <p class="text-lg m-4 font-semibold">Languages</p>
+    <ul class="text-sm m-4">
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          >JavaScript</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="mt-4 mb-8 mr-48">
+    <p class="text-lg m-4 font-semibold">More</p>
+    <ul class="text-sm m-4">
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+          <a href="htmlcheatsheet.html">HTML Cheatsheet</a>
+        </li>
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="csscheatsheet.html">CSS Cheatsheet</a>
+        </li>
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="jscheatsheet.html">JavaScript Cheatsheet</a>
+        </li>
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="roadmap.html">Roadmap</a>
+        </li>
+    </ul>
+  </div>
+</div>
+<p class="bg-black text-white text-center text-base">
+  CodeXOrbit &copy; 2025
+</p>
+</body>
+</html>

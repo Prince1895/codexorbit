@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codexorbit- Compiler</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900">
+    <div class="nav bg-black">
+        <nav class="flex justify-between items-center text-white">
+          <span
+            class="lg:text-4xl lg:m-2 lg:p-2 font-serif font-bold tracking-wider sm:text-xl sm:m-1 sm:p-0"
+            ><a href="index.html">codeXorbit</a></span
+          >
+          <ul
+            class="flex sm:text-sm justify-between lg:text-lg lg:flex sm:hidden text-black sm:text-white"
+          >
+            <li
+              class="cursor-pointer tracking-wide hover:text-gray-300 hover:underline hover:ease-in-out-200ms hover:active:text-blue-300 hover:scale-110 hover:font-semibold lg:mx-4"
+            >
+             <a href="Editor.html">Editor</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+              <a href="project.html">Projects</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+             <a href="Challanges.html"> Challenges</a>
+            </li>
+            <li
+              class="cursor-pointer hover:text-gray-300 hover:underline hover:ease-in-out hover:active:text-blue-300 hover:scale-110 tracking-wide hover:font-semibold lg:mx-4"
+            >
+            <a href="discuss.html">  Discuss</a>
+            </li>
+          </ul>
+          <div class="space-x-6 mr-10">
+            <button
+              class="bg-gray-700 lg:px-3 lg:text-lg font-medium lg:py-1 rounded-md hover:bg-white hover:text-black hover:outline-neutral-700 sm:px-1 sm:text-sm sm:py-0.5"
+            >
+              <a href="signup.html">Sign Up</a>
+            </button>
+            <button
+              class="bg-gray-700 lg:px-3 lg:text-lg font-medium lg:py-1 rounded-md hover:bg-white hover:text-black hover:outline-neutral-700 active:text-black active:bg-white active:outline-slate-600 sm:px-1 sm:text-sm sm:py-0.5"
+            >
+              <a href="Login.html"> Log In </a>
+            </button>
+          </div>
+        </nav>
+      </div>
+   
+    <header class="bg-zinc-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Online Code Compiler</h1>
+            <p class="mt-2 text-lg">Write and compile HTML, CSS, and JavaScript in real-time</p>
+            <p id="project-name" class="mt-4 text-xl font-semibold">No Project Opened</p>
+        </div>
+    </header>
+    <section class="container mx-auto py-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Code Editor</h2>
+                <div class="mb-4">
+                    <label for="html-code" class="block text-lg font-semibold mb-2">HTML</label>
+                    <textarea id="html-code" class="w-full p-4 border border-gray-300 rounded-lg h-40" placeholder="Write your HTML here..."></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="css-code" class="block text-lg font-semibold mb-2">CSS</label>
+                    <textarea id="css-code" class="w-full p-4 border border-gray-300 rounded-lg h-40" placeholder="Write your CSS here..."></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="js-code" class="block text-lg font-semibold mb-2">JavaScript</label>
+                    <textarea id="js-code" class="w-full p-4 border border-gray-300 rounded-lg h-40" placeholder="Write your JavaScript here..."></textarea>
+                </div>
+                <button id="run-code" class="w-full py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600">Run Code</button>
+                <button id="download-code" class="w-full mt-4 py-3 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600">Download Code as PDF</button>
+                <button id="new-project" class="w-full mt-4 py-3 bg-purple-500 text-white font-semibold rounded-lg shadow-md hover:bg-purple-600">New Project</button>
+                <button id="open-project" class="w-full mt-4 py-3 bg-teal-500 text-white font-semibold rounded-lg shadow-md hover:bg-teal-600">Open Project</button>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Output</h2>
+                <iframe id="output-frame" class="w-full border border-gray-300 rounded-lg h-[600px] bg-gray-50"></iframe>
+                <button id="clear-output" class="w-full mt-4 py-3 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-600">Clear Output</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+</div>
+<div class="bg-black text-white flex justify-between items-center">
+  <div class="ml-24 mt-4 mb-8">
+    <p class="text-lg m-4 font-semibold">codeXorbit</p>
+    <ul class="text-sm m-4">
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="index.html"> Home</a>
+           </li>
+           <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="aboutandcontactus.html#about"> About</a>
+         </li>
+         <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="aboutandcontactus.html#contact">Contact Us</a>
+        </li>
+    </ul>
+    <ul class="text-sm m-4">
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        Github
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        LinkedIn
+      </li>
+      <li class="mb-1 hover:text-blue-700 hover:underline cursor-pointer">
+        Twitter
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        Instagram
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        Facebook
+      </li>
+    </ul>
+  </div>
+  <div class="mt-4 mb-8">
+    <p class="text-lg m-4 font-semibold">Languages</p>
+    <ul class="text-sm m-4">
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+      </li>
+      <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          >JavaScript</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="mt-4 mb-8 mr-48">
+    <p class="text-lg m-4 font-semibold">More</p>
+    <ul class="text-sm m-4">
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+          <a href="htmlcheatsheet.html">HTML Cheatsheet</a>
+        </li>
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="csscheatsheet.html">CSS Cheatsheet</a>
+        </li>
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="jscheatsheet.html">JavaScript Cheatsheet</a>
+        </li>
+        <li class="mb-1 cursor-pointer hover:text-blue-700 hover:underline">
+            <a href="roadmap.html">Roadmap</a>
+        </li>
+    </ul>
+  </div>
+</div>
+<p class="bg-black text-white text-center text-base">
+  CodeXOrbit &copy; 2025
+</p>
+
+    <script>
+        let currentProjectName = "No Project Opened";
+
+        function updateProjectName(name) {
+            currentProjectName = name;
+            document.getElementById("project-name").textContent = `Project: ${currentProjectName}`;
+        }
+
+        document.getElementById('run-code').addEventListener('click', () => {
+            const htmlCode = document.getElementById('html-code').value;
+            const cssCode = document.getElementById('css-code').value;
+            const jsCode = document.getElementById('js-code').value;
+
+            const outputFrame = document.getElementById('output-frame');
+            const documentContent = `
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <style>
+                        ${cssCode}
+                    </style>
+                </head>
+                <body>
+                    ${htmlCode}
+                    <script>
+                        ${jsCode}
+                    <\/script>
+                </body>
+                </html>
+            `;
+
+            outputFrame.srcdoc = documentContent;
+        });
+
+        document.getElementById('clear-output').addEventListener('click', () => {
+            const outputFrame = document.getElementById('output-frame');
+            outputFrame.srcdoc = '';
+        });
+
+        document.getElementById('download-code').addEventListener('click', () => {
+            const htmlCode = document.getElementById('html-code').value;
+            const cssCode = document.getElementById('css-code').value;
+            const jsCode = document.getElementById('js-code').value;
+
+            const codeContent = `HTML:\n${htmlCode}\n\nCSS:\n${cssCode}\n\nJavaScript:\n${jsCode}`;
+
+            const pdfBlob = new Blob([codeContent], { type: 'application/pdf' });
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(pdfBlob);
+            downloadLink.download = `${currentProjectName}.pdf`;
+            downloadLink.click();
+        });
+
+        document.getElementById('new-project').addEventListener('click', () => {
+            const newName = prompt("Enter the name of your new project:");
+            if (newName) {
+                updateProjectName(newName);
+                document.getElementById('html-code').value = '';
+                document.getElementById('css-code').value = '';
+                document.getElementById('js-code').value = '';
+            }
+        });
+
+        document.getElementById('open-project').addEventListener('click', () => {
+            const existingName = prompt("Enter the name of the project to open:");
+            if (existingName) {
+                updateProjectName(existingName);
+                // Logic to load project data can be added here
+                alert(`Opened project: ${existingName}`);
+            }
+        });
+    </script>
+</body>
+</html>
